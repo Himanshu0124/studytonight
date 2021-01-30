@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/physics.png" type="image/x-icon">
+    <title>StudyTonight</title>
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"> 
+</head>
+<body>
+    {{>navbar}}
+    <div class="bg-img" style="background-color:#111;padding: 200px; color: #fff; font-size: 60px; text-align: center;"> 
+      <div class="ordered" style="text-align: center; justify-content:center;">
+        <h1 style="font-size: 50px;"> 
+            {{title}}
+            <a href="/buy" title="Complete Your Order Here"><i class="fas fa-book-open"></i></a>
+      </h1>
+      </div> 
+      MATHEMATICS<span style="color: coral;font-size:70px;"> Notes</span>
+    </div> 
+  
+  <div style="display: flex; margin-top:10px;">
+  {{!-- first Book --}}
+  <div class="card">
+  <img src="/images/physics.png" alt="Notes Law For Motion" style="width:100%" />
+  <h3  id="itemFirst">Probablity</h3>
+  <p>Some text about the jeans.</p> 
+   <p><button ><a href="/buy">Buy Now</a></button></p>
+</div>
+ {{!-- first Book End--}}
+
+  {{!-- Second Book --}}
+  <div class="card">
+  <img src="/images/physics.png" alt="Notes Law For Motion" style="width:100%" />
+  <h3 id="itemFirst">Algebra</h3>
+  <p>Some text about the jeans.</p> 
+   <p><button><a href="/buy">Buy Now</a></button></p>
+</div>
+ {{!-- Second Book End--}}
+
+  {{!-- Third Book --}}
+  <div class="card">
+  <img src="/images/physics.png" alt="Notes Law For Motion" style="width:100%" />
+  <h3 id="itemFirst">Integration</h3> 
+  <p>Some text about the jeans. </p> 
+   <p><button><a href="/buy">Buy Now</a></button></p>
+</div>
+ {{!-- Third Book End--}}
+
+  </div>
+ 
+ <br>
+    {{>footer}}
+
+    <script src="first.js"></script>
+</body>
+</html>

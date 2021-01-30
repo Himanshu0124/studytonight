@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="/images/physics.png" type="image/x-icon">
+    <title>Welcome {{clg.myName}}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+     <div class="bg-img" style="background-color:#111;padding: 200px; color: #fff; font-size: 60px; text-align: center;">
+      Welcome<span style="color: coral;font-size:70px;"> {{clg.myName}}</span>
+    </div>
+    <h1 class="heading">Choose the Subject</h1>
+
+      <div class="mySubject">
+
+    <div class="containerA">
+        <div class="titleA">
+            <a href="/physics">Physics</a>
+        </div>
+    </div>
+
+<div class="containerA">
+        <div class="titleA">
+            <a href="/chem">Chemistry</a>
+        </div>
+    </div>
+
+    <div class="containerA">
+        <div class="titleA">
+            <a href="/math">Mathematics</a>
+        </div>
+    </div>
+
+</div>
+ 
+
+
+    {{>footer}}
+</body>
+</html>
+
+ 

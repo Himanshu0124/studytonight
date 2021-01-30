@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/physics.png" type="image/x-icon">
+    <title>StudyTonight</title>
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"> 
+</head>
+<body>
+    {{>navbar}} 
+      <div class="ordered" style="text-align: center; justify-content:center;">
+        <h1 style="font-size: 50px;">Recipt</h1>
+      </div> 
+   
+    <div class="buyRecipt"> 
+          <div class="login22">
+        <form action="#"v>
+         
+          <h1>Name : - {{title}}</h1>
+          
+          <h2>Email : - {{myEmail}}</h2>
+          
+          <h1>City : - {{myCity}}</h1>
+  
+          <h3 id="itemFirstBuy">Here is my Order</h3>
+        <button type="submit" class="signUpBtn" id="orderButton" onclick="myClick()">Place Your Order</button>
+         <a href= "/"type="submit" class="signUpBtn" id="orderButton">Logout</a>
+        </form>
+      </div>
+    </div>
+{{!-- <div class="comment">
+    <h3 style="margin-top: 20px; font-size:25px;">Post Your Comment Here</h3>
+    <textarea name="textarea" id="ta" cols="30" rows="10" style="width: 600;"></textarea>
+        <input type="submit" value="Post" id="taSubmit">
+</div> --}}
+ <br>
+    {{>footer}}
+
+     <script>
+       function myClick()
+       {
+           document.getElementById("orderButton").innerHTML = "Order Successfully Placed.";
+           document.getElementById("orderButton").style.background = "red";
+       }
+     </script> 
+</body>
+</html>

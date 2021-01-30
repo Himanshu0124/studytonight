@@ -1,0 +1,327 @@
+.title{
+  margin-top: 10px;
+    text-align: center;
+    font-size: 35px;
+}
+.account
+{
+    background-color: coral;
+    margin: auto;
+    text-align: center;
+    width: 15%;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.account a
+{
+    text-decoration: none;
+    color: #111;
+}
+
+.account:hover
+{
+    box-shadow:inset 0px 0px 10px rgba(0,0,0,.5);
+}
+
+input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .signUpBtn {
+    width: 70%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signUpBtn:hover {
+    background-color: #45a049;
+  } 
+  .firstHeading
+  {
+      text-align: center;
+      margin-top: 5px;
+      font-weight:500;
+      text-shadow: 12px solid rgb(37, 60, 102); ;
+  
+  }
+.login
+{
+    margin-top:10%;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: 45%;
+    height: 40%;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.login1
+{
+    margin-top:10%;
+    border: 0px solid black;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: 45%;
+    height: 40%;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.logoLogin
+{
+    top: 0;
+    left: 10px;
+    width: 30%;
+    height: 100%;    
+    margin-top: 60px;
+  font-size: 100px;
+  color:rgb(73, 111, 182);
+  transition: 0.5s;  
+}
+.logoLogin:hover
+{
+  color:rgb(37, 60, 102); 
+}
+
+.logoLogin i
+{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: myfirst 4s infinite;
+  animation-direction: alternate;
+}
+@keyframes myfirst {
+    0%   {  left: 0px; top: 0px;}
+    25%  { left: 90px; top: 0px;}
+    50%   {  left: 0px; top: 0px;}
+    75%  { left: 90px; top: 0px;}
+    100%   {  left: 0px; top: 0px;}
+  }
+  .logoLogin1 i
+{
+  width: 100px;
+  height: 100px;
+  font-size: 100px;
+  position: relative;
+  animation: myfirst1 6s infinite;
+  animation-direction: alternate;
+}
+@keyframes myfirst1 {
+    0%   {color: #111;  left: 0px; top: 0px;}
+    25%  {color: cornflowerblue; left: 0px; top: 400px;}
+    50%   {color: #111;  left: 0px; top: 0px;}
+    75%  {color: cornflowerblue; left: 0px; top: 400px;}
+    100%   {color: #111;  left: 0px; top: 0px;}
+  }
+
+  .alert-success
+        {
+           background: rgb(134, 206, 134);
+           padding: 15px;
+           font-size:25px; 
+           color: rgb(30, 128, 30);
+           margin-bottom: 10px;
+        }
+.heading
+{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 70px;
+    color: cornflowerblue;
+    text-shadow: 2px 2px #45a049;
+}
+.mySubject
+{
+  display: flex;
+}
+.containerA
+{
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 100px;
+    width:330px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    margin:5%;
+    cursor: pointer;
+    background: #FEAC5E; 
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
+}
+.titleA
+{
+  padding: 2px 16px;
+  margin-top: 15px;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.1s;
+}
+.titleA a
+{
+  color: #fff;
+  transition: 0.1s;
+}
+.titleA a:hover
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Here is Media Queries Start */
+@media screen and (max-width: 768px) {
+ 
+ 
+.containerA
+{
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 50px;
+    width:100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    text-align: center;
+    margin:3%;
+    cursor: pointer;
+    background: #FEAC5E; 
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
+}
+.titleA
+{
+  padding: 1px 8px;
+  margin-top: 7px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.1s;
+}
+.titleA a:hover
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+}
+ 
+.comment
+{
+  margin-left: 250px;;
+}
+.comment textarea
+{
+  width: 90%;
+  border-radius: 25px;
+  height: 200px;
+}
+#ta
+{
+  font-size: 30px;
+}
+#taSubmit
+{
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#taSubmit:hover
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.stonight
+{
+  margin-top: 5%;
+  margin-left: 20%;
+  font-size: 25px;
+}
+
+.buyRecipt
+{
+    margin-left: 450px;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 750px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.login22
+{
+    margin-top:10%;
+    border: 0px solid black;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: 60%;
+    height: 40%;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 10px;
+}

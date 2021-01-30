@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="/images/physics.png" type="image/x-icon">
+    <title>StudyTonight</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="bg-img" style="background-color:#111;padding: 200px; color: #fff; font-size: 60px; text-align: center;">
+       My<span style="color: coral;font-size:70px;"> Notes </span> You can Use to<span style="color: coral;font-size:70px;"> Prepare </span>
+    </div>
+
+     
+    <div class="containers">
+         
+        <div class="title">
+            <h1>Login or Create to Explore Study <span style="color: coral;">Tonight</span></h1>
+        </div>
+    </div>
+    <br>
+    <!-- Login or Create Account Content -->
+
+      {{#if check}}
+  <div class="alert-success">
+    <strong>{{title}}</strong> {{success}}.
+  </div>
+  {{/if}}
+
+    <div style="display: flex;">
+    <div class="login1">
+        <div class="logoLogin1">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
+        <form action="/register" method="POST">
+            <h1 class="firstHeading">Create Account</h1>
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Enter Your Email Id" required>
+          <label for="fname"></label>
+          <input type="text" id="fname" name="fname" placeholder="Enter Your Father Name" required>
+          <label for="clgname"></label>
+          <input type="text" id="clgname" name="clgname" placeholder="Enter Your College Name" required>
+          <label for="city"></label>
+          <input type="text" id="city" name="city" placeholder="Enter Your City Name" required>
+          <label for="cnum"></label>
+          <input type="text" id="cnum" name="cnum" placeholder="Enter Your Contact Number" required>
+          <label for="pswd"></label>
+          <input type="password" id="pswd" name="pswd" placeholder="Enter the Password" required>
+        <button type="submit" class="signUpBtn">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="login">
+        <div class="logoLogin">
+            <i class="fas fa-sign-in-alt"></i>
+        </div>
+        <form action="/login" method="POST">
+            <h1 class="firstHeading">Login&nbsp;Here</h1>
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Enter Your Email Id">
+          <label for="pswd"></label>
+          <input type="password" id="pswd" name="pswd" placeholder="Enter the Password">
+        <button type="submit" class="signUpBtn">Login</button>
+        </form>
+      </div>
+    <!-- Login or Create Account Content End-->
+    </div>
+<br>
+{{>footer}}
+</body>
+</html>
