@@ -5,6 +5,7 @@ const Register = require('./src/models/register');
 const hbs = require('hbs');
 var app = express();
 const { json } = require("express");
+const port = process.env.PORT || 8000;
 var nameLogin , emailLogin , cityLogin;
 
 const static_path = path.join(__dirname , "/public");
@@ -105,8 +106,8 @@ catch (error) {
 
 })
 
-app.listen(8000 , ()=>{
-    console.log('Server is running on 8000');
+app.listen(port , ()=>{
+    console.log(`Server is running on ${port}`);
  })
 
 
